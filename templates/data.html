@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your data</title>
+</head>
+<body>
+    <h3> Showing data for {{session['username']}} </h3>
+    <table border=1>
+        <thead>
+            <td>user_id</td>
+            <td>username</td>
+            <td>password</td>
+            <td>fullname</td>
+            <td>fathersname</td>
+            <td>contactno</td>
+        </thead>
+        <tr>
+            <td>{{userdata[0]}}</td>
+            <td>{{userdata[1]}}</td>
+            <td>{{userdata[2]}}</td>
+            <td>{{userdata[3]}}</td>
+            <td>{{userdata[4]}}</td>
+            <td>{{userdata[5]}}</td>
+        </tr>
+    </table>
+    
+    <a href="/update">Update data</a>
+    <a href="/logout">Logout</a>
+</body>
+</html>
